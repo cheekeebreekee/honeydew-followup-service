@@ -1,6 +1,6 @@
 service: honeydew-followup-service
 
-frameworkVersion: ">=2.0.0"
+frameworkVersion: ">=3.1.0"
 
 provider:
   name: aws
@@ -10,9 +10,6 @@ provider:
   profile: ApiGatewayLambdaServiceUser
   timeout: 30
   lambdaHashingVersion: 20201221
-  environment:
-    FOLLOW_UPS_TABLE: ${self:service}-table-${self:provier.stage}
-    ENVIRONMENT: TEST
   iamRoleStatements:
     - Effect: Allow
       Action:

@@ -14,4 +14,4 @@ Resources:
           KeyType: "HASH"
         - AttributeName: "followUpId"
           KeyType: "RANGE"
-      TableName: ${self:provider.environment.FOLLOW_UPS_TABLE}
+      TableName: ${file(./sls/variables.yml):${self:provider.stage}.FOLLOWUPS_TABLE}

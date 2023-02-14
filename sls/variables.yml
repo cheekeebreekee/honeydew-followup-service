@@ -1,0 +1,6 @@
+test:
+  FOLLOWUPS_TABLE: honeydew-followup-service-table-test
+  ENVIRONMENT: TEST
+prod:
+  FOLLOWUPS_TABLE: honeydew-followup-service-table-prod
+  ENVIRONMENT: TEST
